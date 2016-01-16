@@ -27,6 +27,8 @@ function roundVal(temp)
 jQuery(document).ready(function($) {
 
 	var eventList = [];
+	var listOfKnownEvent= [];
+	
 
 	var lastCompliment;
 	var compliment;

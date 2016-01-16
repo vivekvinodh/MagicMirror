@@ -6,7 +6,7 @@ var compliments = {
 		'afternoon': config.compliments.afternoon,
 		'evening': config.compliments.evening
 	},
-	updateInterval: config.compliments.interval || 30000,
+	updateInterval: config.compliments.interval || 25000,
 	fadeInterval: config.compliments.fadeInterval || 4000,
 	intervalId: null
 };
@@ -23,7 +23,7 @@ compliments.updateCompliment = function () {
 	var hour = moment().hour();
 
 	// In the followign if statement we use .slice() on the
-	// compliments array to make a copy by value. 
+	// compliments array to make a copy by value.
 	// This way the original array of compliments stays in tact.
 
 	if (hour >= 3 && hour < 12) {
